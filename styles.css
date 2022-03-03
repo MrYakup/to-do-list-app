@@ -1,0 +1,445 @@
+body,
+html {
+  position: relative;
+  width: 100%;
+  height: 100%;
+  margin: 0;
+  padding: 0;
+  font-family: "Roboto", sans-serif;
+}
+#container {
+  width: 100%;
+  height: 100%;
+  background-color: rgb(100, 148, 237);
+  float: left;
+  display: flex;
+  flex-direction: row;
+  padding: 130px;
+  box-sizing: border-box;
+  justify-content: space-between;
+  height: auto;
+}
+
+/******************header kısmı başlangıç**************/
+
+.header {
+  display: table;
+  position: fixed;
+  z-index: 3;
+  top: 0px;
+  left: 0px;
+  width: 100%;
+  background-color: rgba(100, 148, 237, 0);
+  color: white;
+  text-align: center;
+  height: 100px;
+  border-radius: 0px 0px 30px 0px;
+  box-shadow: 6px 10px 10px rgb(0, 0, 0);
+  
+}
+/* banner logo kısmı başlangıç */
+.yakup{
+  display: table-cell;
+  position: relative;
+  z-index: 1;
+  left: -245px;
+  top: 37px;
+  color: bisque;
+  /* text-align: center; */
+  font-size: 35px;
+  text-shadow: 3px 4px 5px rgb(5, 5, 5);
+}
+.todos{
+  /* display: table-cell; */
+  position: relative;
+  z-index: -1;
+  left: -779px;
+  top: 37px;
+  color: bisque;
+  /* text-align: center; */
+  font-size: 35px;
+  text-shadow: 3px 4px 5px rgb(5, 5, 5);
+}
+/* banner logo kısmı bitiş */
+
+/******************header kısmı bitiş**************/
+
+/* banner bal başlangıç*/
+.banner1{
+  position: absolute;
+  top: 0px;
+  left: 0px;
+  height: 150px;
+  opacity: 0.7;
+  /* width: 1350px; */
+  /* background-color: #993333; */
+  /* object-fit: contain; */
+  
+}
+.banner2{
+  position: absolute;
+  top: 0px;
+  left: 390px;
+  height: 150px;
+  opacity: 0.7;
+  /* width: 1350px; */
+  /* background-color: #993333; */
+  /* object-fit: contain; */
+  
+}
+.banner3{
+  position: absolute;
+  top: 0px;
+  left: 780px;
+  height: 150px;
+  opacity: 0.7;
+  /* width: 1350px; */
+  /* background-color: #993333; */
+  /* object-fit: contain; */
+}
+.banner4{
+  position: absolute;
+  top: 0px;
+  left: 1170px;
+  height: 150px;
+  opacity: 0.7;
+  /* width: 1350px; */
+  /* background-color: #993333; */
+  /* object-fit: contain; */
+  
+}
+/* banner bal bitiş */
+
+.list {
+  position: relative;
+  float: left;
+  margin-left: 10px;
+  width: 200px;
+  min-height: 370px;
+  height: fit-content;
+  border-radius: 10px;
+  background-color: aliceblue;
+  padding: 20px;
+  box-shadow: 6px 5px 10px rgb(14, 13, 13);
+}
+
+h1 {
+  color: bisque;
+  text-align: center;
+  font-size: 22px;
+  text-shadow: 3px 4px 5px rgb(5, 5, 5);
+}
+.card {
+  position: relative;
+  width: 150px;
+  background-color: #fff;
+  padding: 15px;
+  border-radius: 5px;
+  margin-bottom: 15px;
+  box-shadow: 2px 2px 5px rgb(113, 113, 113);
+  overflow-wrap: break-word;
+}
+.card.dragging {
+  opacity: 0.4;
+}
+
+.card .title {
+  font-weight: bold;
+  margin-bottom: 10px;
+  
+}
+
+.tarih{
+  font-size: smaller;
+  position: absolute;
+  left: 107px;
+  top: 1px;
+  color: rgb(163, 113, 123);
+  text-shadow: 1px 2px 4px black;
+}
+
+
+
+/************************FORM BÖLÜMÜ başlangıç****************/
+.formList {
+  position: relative;
+  float: left;
+  margin-left: 10px;
+  width: 200px;
+  min-height: 370px;
+  height: fit-content;
+  border-radius: 10px;
+  background-color: aliceblue;
+  padding: 20px;
+  box-shadow: 6px 5px 10px rgb(14, 13, 13);
+}
+
+#divform{
+  position: relative;
+  width: 200px;
+  min-height: 200px;
+  height: auto;
+  border-radius: 10px 10px 0px 0px;
+  background-color: bisque;
+  box-shadow: 2px 2px 5px rgb(113, 113, 113);
+}
+
+.divP{
+  border-radius: 10px;
+  position: relative;
+  top: 12px;
+}
+
+.form{
+  background-color: blanchedalmond;
+  position: relative;
+  top: 20px;
+  min-height: 200px;
+  height: auto;
+}
+
+
+
+/* çöp kutusu bölümü başlangıç */
+#divsil{
+  position: absolute;
+  top: 266px;
+  width: 200px;
+  height: 70px;
+  border-radius: 0px 0px 10px 10px ;
+  display: none;
+  background-color: rgb(245, 159, 159);
+  background-image: url("./images/delete.svg");
+  background-repeat: no-repeat;
+  background-position-x: 26px;
+  opacity: 0.7;
+  box-shadow: 2px 2px 5px rgb(113, 113, 113);
+  float: none;
+  margin-left: 0px;
+  min-height: 160px;
+  /* height: fit-content; */
+  padding: 0px;
+  overflow: auto;
+}
+
+
+#divsil::-webkit-scrollbar {
+  width: 17px;
+}
+
+#divsil::-webkit-scrollbar-track {
+  background-color: #ffffff8a;
+  border-radius: 100px;
+}
+
+#divsil::-webkit-scrollbar-thumb {
+  border-radius: 100px;
+  background-image: linear-gradient(180deg, #d0368a 0%, #708ad4 99%);
+  box-shadow: inset 2px 2px 5px 0 rgba(#fff, 0.5);
+}
+/* çöp kutusu bölümü bitiş */
+
+
+input[type=text]{
+  background-color: aliceblue;
+  margin-left: 2px;
+  width: 190px;
+  height: 20px;
+  margin-top: 2px;
+  border: none;
+  outline: none;
+  border-radius: 7px;
+}
+
+input[type=date]{
+  background-color: aliceblue;
+  margin-left: 2px;
+  width: 194px;
+  height: 20px;
+  margin-top: 2px;
+  border: none;
+  outline: none;
+  border-radius: 7px;
+}
+
+
+textarea{
+  margin-left: 2px;
+  background-color: aliceblue;
+  margin-top: 5px;
+  width: 190px;
+  border: none;
+  outline: none;
+  border-radius: 7px;
+}
+
+input[value="Görev Ekle"]{
+  margin-left: 5px;
+  margin-top: 15px;
+  background-color: rgb(224, 50, 85);
+  width: 90px;
+  height: 30px;
+  color: bisque;
+  border: 0;
+  outline: 0;
+  border-radius: 10px;
+}
+
+input[value="Temizle"]{
+  margin-left: 5px;
+  margin-top: 15px;
+  background-color: rgb(224, 50, 85);
+  width: 90px;
+  height: 30px;
+  color: bisque;
+  border: 0;
+  outline: 0;
+  border-radius: 10px;
+}
+
+.form lottie-player {
+  position: absolute;
+  top: 155px;
+  left: 73px;
+  width: 46px;
+  height: 46px;
+  cursor: pointer;
+}
+/************************FORM BÖLÜMÜ bitiş**************/
+
+
+
+/************** option kısmı başlangıç *****************/
+.option-button {
+   /* float: right; */
+   position: relative;
+   top: 7px;
+   left: 116px;
+   /* margin-right: 10px; */
+   padding: 0;
+   height: 30px;
+   border: none;
+   background-color: rgba(0,0,0,0);
+   font-size: 27px;
+   color: gray;
+   cursor: pointer;
+   
+}
+
+.option-button:active {
+  bottom: 30px;
+}
+
+.note-menu {
+   position: absolute;
+   bottom: 10px;
+   right: 14px;
+   z-index: 3;
+   background-color: rgba(211, 211, 211, 0.404);
+   display: inline-block;
+   border-radius: 50%;
+   width: auto;
+   -moz-box-shadow: 2px 2px 6px 2px#777777; 
+ -webkit-box-shadow: 2px 2px 6px 2px #777777; 
+   box-shadow: 2px 2px 6px 2px #777777;
+   text-align: center;
+   animation-name: fade-in;
+   animation-duration: 0.4s;
+}
+
+.color-option {
+   /* display: 'inline-block'; */
+   position: relative;
+   top: 13px;
+   height: 40px;
+   width: 40px;
+   border-radius: 20px;
+   border: 1px solid rgb(128, 128, 128);
+   margin: 1px;
+   cursor: pointer;
+}
+
+.color-option:active {
+   position: relative;
+   bottom: 5px;
+}
+
+
+.delete-note {
+   display: inline-block;
+   margin-bottom: 10px;
+   cursor: pointer;
+}
+.delete-note:active {
+   position: relative;
+   bottom: 5px;
+}
+
+.delete-text {
+  position: relative;
+  top: 7px;
+   margin: 0px;
+   color: #993333;
+   display: inline-block;
+   vertical-align: middle;
+}
+
+.delete-icon {
+   margin: 0px;
+   height: 24px;
+   position: relative;
+   top: 7px;
+   display: inline-block;
+   vertical-align: middle;
+}
+/***************option kısmı bitiş*************************/
+
+
+
+
+
+@media screen and (max-width: 1450px) {
+   .list {
+       /* width: 22.75%; */
+       
+   }
+}
+
+@media screen and (max-width: 1050px) {
+   .list {
+       /* width: 31%; */
+       
+   }
+}
+
+@media screen and (max-width: 650px) {
+  .list {
+      margin: 10px;
+  }
+
+  #container{
+    flex-direction: column;
+  }
+
+  .note-menu {
+      width: 140px;
+      padding: 3px;
+  }
+
+  .color-option {
+      margin: 3px;
+  }
+
+  .header {
+      height: 100px;
+  }
+
+  .delete-note {
+      margin: 0;
+  }
+
+  /* .option-button {
+      font-size: 40px;
+      margin-right: 10px;
+  } */
+}

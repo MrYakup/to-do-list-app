@@ -1,0 +1,104 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Sortable Drag and Drop with Vanilla Javascript</title>
+    <link rel="preconnect" href="https://fonts.gstatic.com" />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Roboto:wght@100;300;400;500;700;900&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="./styles.css" />
+    
+   
+  </head>
+  <body>
+
+    
+
+    <div id="container">
+
+      <!------------header kısmı başlangıç------------>
+        <div class="header">
+          <img src="bal.png"  class="banner1">
+          <img src="bal.png"  class="banner2">
+          <img src="bal.png"  class="banner3">
+          <img src="bal.png"  class="banner4">
+          <h1 class="yakup">Yakup's</h1>
+          <h1 class="todos">ToDoList</h1>
+        </div>
+        
+      <!------------header kısmı başlangıç------------>
+
+
+
+      <!---------------form kısmı başlangıç------------>
+      <div class="formList">
+        <h1>TODO</h1>
+        <div class="draggingContainer">
+
+
+          <div id="divform" >
+            <h1 class="divP">Görev Ekle</h1>
+    
+            <div class="form">
+              <input type="text" placeholder="Başlik" id="text1" />
+              <textarea placeholder="Açıklama" rows="3" id="textarea"></textarea>
+              <input
+                type="text"
+                placeholder="Başlama Tarihi"
+                onfocus="(this.type='date')"
+                id="text2"
+              />
+              <input type="submit" value="Görev Ekle" id="ekle" />
+              <input type="submit" value="Temizle" id="temizle" />
+              <lottie-player id="cöp" src="https://assets6.lottiefiles.com/packages/lf20_WcyRdM.json"  background="transparent"  speed="2"   hover   onclick="myFunction()" ></lottie-player>
+            </div>
+    
+            <!-- sil kısmı başlangıç -->
+            <div id="divsil" class="list">
+        
+            </div>
+            <!-- sil kısmı bitiş -->
+          </div>
+          
+        </div>
+      </div>
+      <!---------------form kısmı bitiş------------>
+
+      <!--------------yapılacak yapılıyor yapıldı kısmı başlangıç------------>
+      <div class="list">
+        <h1>YAPILACAK</h1>
+        <div class="draggingContainer" id="yapılacaklar">
+
+          
+          
+        </div>
+      </div>
+      
+     
+
+      <div class="list">
+        <h1>YAPILIYOR</h1>
+        <div class="draggingContainer">
+          
+          
+        </div>
+      </div>
+
+      <div class="list">
+        <h1>YAPILDI</h1>
+        <div class="draggingContainer">
+          
+
+        </div>
+      </div>
+
+      <!--------------yapılacak yapılıyor yapıldı kısmı bitiş------------>
+    </div>
+    <script src="https://unpkg.com/@lottiefiles/lottie-player@latest/dist/lottie-player.js"></script>
+    <script src="./script.js"></script>
+  </body>
+</html>
