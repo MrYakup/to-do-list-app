@@ -1,5 +1,5 @@
-# To-Do-List
+# To-Do-List-App
 
 ## html-css-javascript
 
-[to-do-list-live](https://mryakup.github.io/html-todo-list)
+[To-Do-List-App-Live](https://mryakup.github.io/html-todo-list)
