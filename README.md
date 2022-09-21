@@ -2,4 +2,4 @@
 
 ## html-css-javascript
 
-[To-Do-List-App-Live](https://mryakup.github.io/html-todo-list-app)
+[To-Do-List-App-Live](https://mryakup.github.io/todo-list-app)
